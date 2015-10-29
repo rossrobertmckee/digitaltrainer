@@ -1,0 +1,35 @@
+<br />
+<br />
+<%= form_for @assessment, url: {action: "create"} do |f| %>
+  <h4>Height</h4>
+  <%= f.text_field :height %>
+  <h4>Weight</h4>
+  <%= f.text_field :weight %>
+  <h4>Age in Years</h4>
+  <%= f.text_field :age_in_years %>
+   <h4>Body Mass Index</h4>
+  <%= f.text_field :body_mass_index %>
+  <h4>Chest</h4>
+  <%= f.text_field :chest %>
+  <h4>Waist</h4>
+  <%= f.text_field :waist %>
+  <%= f.submit "Create" %>
+
+<% end %>
+<br />
+
+    t.integer  "user_id"
+    t.integer  "height"
+    t.integer  "weight"
+    t.integer  "age_in_years"
+    t.integer  "body_mass_index"
+    t.integer  "chest"
+    t.integer  "waist"
+    t.integer  "hip"
+    t.integer  "bicep"
+    t.integer  "forearm"
+    t.integer  "thigh"
+    t.integer  "calf"
+    t.integer  "neck"
+    t.integer  "users_results_assessment"
+    t.string   "image_goal"

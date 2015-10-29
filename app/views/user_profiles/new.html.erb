@@ -1,0 +1,12 @@
+
+<br />
+<br />
+<%= form_for @profile, url: {action: "create"} do |f| %>
+  <h4>User Name</h4>
+  <%= f.text_field :user_name %>
+  <h4>Age</h4>
+  <%= f.text_field :age %>
+  <h4>Zip Code</h4>
+  <%= f.text_field :zip_code %>
+  <%= f.submit "Create" %>
+<% end %>

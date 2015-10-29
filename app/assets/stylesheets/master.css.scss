@@ -1,0 +1,44 @@
+.navbar-inverse a.navbar-brand {
+  font-family: "Helvetica", Helvetica;
+  font-weight: 100;
+  color: white;
+}
+
+.dashboard {
+  margin-top: 50px;
+}
+
+html,body {
+  height:100%;
+}
+
+h1 {
+  font-family: Arial,sans-serif;
+  font-size:80px;
+  color:#DDCCEE;
+}
+
+.lead {
+	color:#DDCCEE;
+}
+
+/* Custom container */
+.container-full {
+  margin: 50px auto;
+  width: 100%;
+  min-height:100%;
+  background: url('womanweightb&w.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow:hidden;
+}
+
+.container-full a {
+  text-decoration:none;
+}
+
+.v-center {
+  margin-top:7%;
+}
+
+
+  

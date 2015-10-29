@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+
+  devise_for :users, controllers: { registrations: "registrations" }
+
+  root 'pages#index'
+  get 'sign_up', :to => 'pages#sign_up'
+  resources :user_profiles, :only => [:new, :create, :update]
+  resources :user_physical_assessments, :only => [:new, :create, :update]
+  get 'user_dashboard', :to => 'dashboard#user_dashboard'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

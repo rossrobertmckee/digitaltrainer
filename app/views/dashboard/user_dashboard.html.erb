@@ -1,0 +1,8 @@
+<div class="dashboard">
+		<h2>User Dashboard</h2>
+		<%= @user.user_name %>
+		<% @physical_assessment.each do |t| %>
+			<%= t.age_in_years %>
+		<% end %>
+
+</div>

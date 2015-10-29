@@ -1,0 +1,76 @@
+<div class="container-full">
+  <div class="row">
+    <div class="col-md-3 col-md-offset-1 text-center v-center">
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#signupModal">
+        Sign Up!
+      </button>
+
+
+
+          
+          <br><br><br>
+          
+        </div>
+        
+      </div> <!-- /row -->
+  
+
+
+</div> <!-- /container full -->
+
+<!-- Modal -->
+<div id="signinModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+         <h4><span class="glyphicon glyphicon-user"></span> Login (Welcome Back!)</h4>
+      </div>
+      <div class="modal-body">
+        <%= simple_form_for(:user, :url => user_session_path) do |f| %>
+          <div class="inputs">
+            <%= f.input :email, :required => false, :autofocus => true %>
+            <%= f.input :password, :required => false %>
+          </div>
+      </div>
+      <div class="modal-footer">
+         <%= f.button :submit, "Sign in", :class => 'btn btn-primary' %>
+        <% end %>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div id="signupModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+         <h4><span class="glyphicon glyphicon-edit"></span> Sign up! (A smart idea, btw)</h4>
+      </div>
+      <div class="modal-body">
+        <%= simple_form_for(:user, :url => user_registration_path) do |f| %>
+          <div class="inputs">
+            <%= f.input :email, :required => false, :autofocus => true %>
+            <%= f.input :password, :required => false %>
+            <%= f.input :password_confirmation %>
+          </div>
+      </div>
+      <div class="modal-footer">
+         <%= f.button :submit, "Sign Me Up!", :class => 'btn btn-primary' %>
+        <% end %>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>

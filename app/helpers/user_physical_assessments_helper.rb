@@ -1,0 +1,2 @@
+module UserPhysicalAssessmentsHelper
+end
